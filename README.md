@@ -9,3 +9,9 @@
 - [x] Nie pozabijać ludzi w pracy
 - [ ] Być miłym chociaż przez 5 minut
 - [ ] Szpilnąć w piłkarzyki
+
+#### Raz, dwa, raz, dwa, próba klawiatury...
+
+``` c
+#include <iostream> // hasztag inklud iksde
+```
