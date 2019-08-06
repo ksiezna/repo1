@@ -2,9 +2,9 @@ language: python
 python: 3.6
 os: xenial
 install:
-  - pip3 install Flask
+  - pip install Flask
 script:
-  - python3 app.py
+  - python app.py
 deploy:
   provider: heroku
   api_key:
