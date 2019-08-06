@@ -55,4 +55,4 @@ deploy:
   provider: heroku
   api_key:
     secure: b352a28d-cb15-4084-9c00-168f0e291047
-  app: myapp1
+  app: nomyapp123
