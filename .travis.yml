@@ -4,7 +4,7 @@ os: xenial
 install:
   - pip install Flask
 script:
-  - python app.py
+  - sudo python app.py
 deploy:
   provider: heroku
   api_key:
