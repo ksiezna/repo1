@@ -1,56 +1,10 @@
 language: python
-matrix:
-  include:
-#     - name: 'Run it on 2.7 Xenial'
-#       python: 2.7
-#       os: xenial
-    - name: 'Run it on 3.6 Xenial'
-      python: 3.6
-      os: xenial
-#     - name: 'Run it on 3.7 Xenial'
-#       python: 3.7
-#       os: xenial
-#     - name: 'Run it on 2.7 Bionic'
-#       python: 2.7
-#       os: bionic
-#     - name: 'Run it on 3.6 Bionic'
-#       python: 3.6
-#       os: bionic
-#     - name: 'Run it on 3.7 Bionic'
-#       python: 3.7
-#       os: bionic
-#     - name: 'Run it on 2.7 OSX'
-#       python: 2.7
-#       os: osx
-#       language: shell
-#     - name: 'Run it on 3.6 OSX'
-#       python: 3.6
-#       os: osx
-#       language: shell
-#     - name: 'Run it on 3.7 OSX'
-#       python: 3.7
-#       os: osx
-#       language: shell
-#     - name: 'Run it on 2.7 Wintel'
-#       python: 2.7
-#       os: windows
-#       language: shell
-#       before_install:
-#         - choco install python2
-#     - name: 'Run it on 3.6 Wintel'
-#       python: 3.6
-#       os: windows
-#       language: shell
-#       before_install:
-#         - choco install python --version 3.6
-#     - name: 'Run it on 3.7 Wintel'
-#       python: 3.7
-#       os: windows
-#       language: shell
-#       before_install:
-#         - choco install python --version 3.7
-script: python -c "print('Hello!')" || python -c "print 'ahoj'"
-
+python: 3.6
+os: xenial
+install:
+  - pip3 install Flask
+script:
+  - python3 app.py
 deploy:
   provider: heroku
   api_key:
