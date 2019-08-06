@@ -2,7 +2,7 @@ language: python
 python: 3.6
 os: xenial
 install:
-  - pip install Flask python-flask
+  - pip install Flask
 script:
   - sudo python app.py
 deploy:
